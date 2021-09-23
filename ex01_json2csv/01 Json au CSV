@@ -1,0 +1,6 @@
+01 Json au CSV
+Dossier : ex01_json2csv
+
+Ecrivez un programme python qui prend un fichier json en entrée et génère un fichier csv en sortie.
+
+Vous pouvez utiliser pip install json
