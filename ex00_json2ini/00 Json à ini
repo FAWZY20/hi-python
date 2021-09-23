@@ -1,0 +1,7 @@
+00 Json à ini
+
+Dossier : ex00_json2ini
+
+Ecrivez un programme python qui prend un fichier de configuration json comme argument et génère un fichier ini.
+
+Un json profond est cool mais gérer un json complexe est le plus cool ! :)
