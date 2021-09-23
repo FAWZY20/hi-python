@@ -1,0 +1,7 @@
+03 Pierre, Papier, Ciseaux
+
+Nom de fichier : ex03_rps
+
+nous utiliserons une fonction aléatoire pour générer la sortie aléatoire côté ordinateur.
+L'utilisateur fera le premier pas, puis le programme en fera un. Ensuite, une fonction vérifiera 
+la validité du coup. Enfin, nous afficherons le résultat et demanderons à l'utilisateur de rejouer ou non.
