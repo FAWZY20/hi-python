@@ -1,0 +1,32 @@
+import random
+
+class NumberGuessingGame:
+
+    def __init__(self):
+        self.LOWER = 1
+        self.HIGHER = 10
+
+    def get_random_number(self):
+        return random.randint(self.LOWER, self.HIGHER)
+
+    def start(self):
+
+        random_number = self.get_random_number()
+
+        print(
+            f"Devinez le numéro généré au hasard parmi {self.LOWER} à {self.HIGHER}")
+            
+        while True:
+            user_number = int(input("Entrez le numéro deviné :"))
+            if user_number == random_number:
+                print(
+                    f"-> Hourra ! Tu l'as eu le nombre à deviner est bien le {random_number} !")
+                break
+            elif user_number < random_number:
+                print("-> Votre nombre est inférieur au nombre aléatoire")
+            else:
+                print("-> Votre nombre est plus grand que le nombre aléatoire")
+
+
+numberGuessingGame = NumberGuessingGame()
+numberGuessingGame.start()
