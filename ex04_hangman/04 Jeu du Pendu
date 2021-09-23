@@ -1,0 +1,3 @@
+Nom de fichier : ex04_hangman
+
+Ecrivez un programme où l'utilisateur devra deviner un alphabet complétant un mot et aura un nombre limité de chances de deviner une lettre.
