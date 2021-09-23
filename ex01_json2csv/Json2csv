@@ -1,0 +1,4 @@
+import pandas as pd
+df = pd.read_json (r'C:\Users\Fawzy\OneDrive\Bureau\Python\Data.json')
+df.to_csv (r'C:\Users\Fawzy\OneDrive\Bureau\Python\Data.csv', index = None)
+print("fichier convertie")
