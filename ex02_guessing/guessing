@@ -27,6 +27,5 @@ class NumberGuessingGame:
             else:
                 print("-> Votre nombre est plus grand que le nombre aléatoire")
 
-
 numberGuessingGame = NumberGuessingGame()
 numberGuessingGame.start()
