@@ -1,17 +1,22 @@
-import json
+import json,os
 
-filename = 'data.json'
+file = "Data.json"
+string= ""
 
-dict1 = {}
-
-with open(filename) as ini:
-
-    for line in ini:
-
-        command, description = line.strip().split(None, 1)
-        dict1[command] = description.strip()
-
-
-out_file = open("test1.json", "w")
-json.dump(dict1, out_file, indent = 4, sort_keys = False)
-out_file.close()
+if os.path.exists(file):
+    
+    with open(file, 'r') as file :
+        data = json.load(file)
+    
+    for section in data.keys():
+        string += "[" + section + " ]" + "\n"
+        sectionElement = data[section]
+        for key in sectionElement.keys():
+            string += str(key) + "=" + str(sectionElement[key])+"\n"
+        string += "\n"
+    
+    with open('file.init', 'w') as file:
+        file.write(string)
+        print("Job don!")
+else:
+    print("file no exist")
