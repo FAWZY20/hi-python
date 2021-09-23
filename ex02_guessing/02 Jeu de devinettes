@@ -1,0 +1,4 @@
+02 Jeu de devinettes
+Nom de fichier : ex02_guessing
+
+Créez un programme python dans lequel le système choisira un nombre aléatoire entre toutes les plages définies sur les arguments, puis l'utilisateur recevra un indice pour deviner le nombre. Chaque fois que l'utilisateur devine le nombre à tort, il reçoit un autre indice le menant vers la réponse
